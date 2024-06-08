@@ -1,0 +1,1300 @@
+:root {
+    --AmericanRed: #D20000;
+    --AmericanDarkRed : #B20000;
+    --AmericanBlue: #000096;
+    --AmericanDarkBlue : #000086;
+    --Black3: #333;
+    --Black6: #666;
+    --WhiteF: #fff;
+    --WhiteE: #eee;
+    --Glass: rgba(255, 255, 255, 0);
+    --Translucent: rgba(255, 255, 255, 0.6);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("Other Files/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("Other Files/Roboto/Roboto-Medium.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* A. header */
+
+.head1 {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.head1 img {
+    height: 35px;
+    margin-left: 60px;
+}
+
+.head1 div {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-left: 320px;
+}
+
+.head1 div a, .head1 div p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--Black3);
+}
+
+.head1 div p {
+    background: linear-gradient(180deg, #D20000 30%, #000096 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head2 {
+    height: 500px;
+    width: 98.56vw;
+    background-size: cover;
+    box-shadow: 0px -60px 80px 0px rgba(0, 0, 0, 1) inset;
+}
+
+/* header's background customization */
+
+.NYC {
+    background: url("2. Cities/NYC2.webp") lightgray 50% / cover no-repeat;
+}
+
+.LA {
+    background: url("2. Cities/LA2.webp") lightgray 50% / cover no-repeat;
+}
+
+.Miami {
+    background: url("2. Cities/Miami2.jpg") lightgray 50% / cover no-repeat;
+}
+
+.Chicago {
+    background: url("2. Cities/Chicago2.webp") lightgray 50% / cover no-repeat;
+}
+
+.Las-Vegas {
+    background: url("2. Cities/LasVegas2.jpeg") lightgray 50% / cover no-repeat;
+}
+
+.San-Francisco {
+    background: url("2. Cities/SanFrancisco2.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+/* B. main */
+
+main {
+    border-radius: 30px 30px 0 0;
+    margin-top: -30px;
+}
+
+/* B.1 section1 */
+
+.section1 {
+    width: 88vw;
+    background: linear-gradient(180deg, #C8E1FF 0%, #71B2FF 100%);
+    border-radius: 40px;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    top: -60px;
+    left: 5vw;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.4s ease;
+}
+
+/* section1 customization */
+
+.nyc-section {
+    background: linear-gradient(180deg, #fff 20%, #1E90FF 100%);
+}
+
+.la-section {
+    background: linear-gradient(180deg, #FFE364 20%, #FF7E5F 100%);
+}
+
+.miami-section {
+    background: linear-gradient(180deg, #FF86F3 20%, #2895FF 100%);
+}
+
+.chicago-section {
+    background: linear-gradient(180deg, #FFF 20%, #FFEA39 100%);
+}
+
+.las-vegas-section {
+    background: linear-gradient(180deg, #69FF6F 20%, #00C9FF 100%);
+}
+
+.san-francisco-section {
+    background: linear-gradient(180deg, #FECF76 20%, #E84A5F 100%);
+}
+
+
+/* B.1.1 .left-div */
+
+.section1 .left-div {
+    background-color: inherit;
+    width: 50%;
+}
+
+.left-div .para {
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: inherit;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+/* B.1.2 right-div */
+
+.section1 .right-div {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-div img {
+    background-color: inherit;
+}
+
+/* B.1.1.1 .welcome-container */
+
+.left-div .welcome-container {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.welcome-container img {
+    background-color: inherit;
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+.welcome-container p {
+    color: var(--Black3);
+    background-color: inherit;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.section1 .right-div {
+    background-color: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-div img {
+    height: 220px;
+}
+
+/* B.2 section2 */
+
+.section2 {
+    height: fit-content;
+    width: 90%;
+    padding: 30px;
+}
+
+.section2 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: inherit;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+/* B.2.1 top-attractions-head */
+
+.top-attractions-head {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.top-attractions-head img {
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+.top-attractions-head p {
+    color: var(--Black3);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* B.2.2 cards-container1 */
+
+.cards-container1 {
+    width: 100%;
+    margin-top: 70px;
+}
+
+/* B.2.2.1 red-card / B.2.2.2 blue-card */
+
+.cards-container1 .red-card, .cards-container1 .blue-card {
+    height: 362px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    transition: 0.4s ease;
+}
+
+.red-card {
+    background: linear-gradient(180deg, #FA3232 10%, #960000 100%);
+    padding-left: 20px;
+    left: 50px;
+    position: relative;
+}
+
+.blue-card {
+    background: linear-gradient(180deg, #0A0AC8 10%, #000078 100%);
+    padding-right: 20px;
+    left: 490px;
+    position: relative;
+}
+
+.red-card .img1, .blue-card .img1 {
+    height: 320px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.60);
+    position: relative;
+    left: 20px;
+    transition: 0.4s ease;
+}
+
+.blue-card .img1 {
+    border-radius: 10px;
+    position: relative;
+    left: -20px;
+}
+
+/* cards' img customization */
+
+/* 1. New York City */
+
+.sol {
+    background: url("2. Cities/NYC3.jpg") lightgray 50% / cover;
+}
+
+.ts {
+    background: url("2. Cities/NYC4.jpeg") lightgray 50% / cover;
+}
+
+.esb {
+    background: url("2. Cities/NYC5.webp") lightgray 50% / cover;
+}
+
+/* 2. Los Angeles */
+
+.hs {
+    background: url("2. Cities/LA5.jpg") lightgray 50% / cover;
+}
+
+.ush {
+    background: url("2. Cities/LA3.jpg") lightgray 50% / cover; 
+}
+
+.hwf {
+    background: url("2. Cities/LA6.webp") lightgray 50% / cover; 
+}
+
+/* 3. Miami */
+
+.sb {
+    background: url("2. Cities/Miami3.jpg") lightgray 50% / cover; 
+}
+
+.lh {
+    background: url("2. Cities/Miami4.jpeg") lightgray 50% / cover; 
+}
+
+.ww {
+    background: url("2. Cities/Miami5.jpg") lightgray 50% / cover; 
+}
+
+/* 4. Chicago */
+
+.mp {
+    background: url("2. Cities/Chicago3.jpg") lightgray 50% / cover; 
+}
+
+.np {
+    background: url("2. Cities/Chicago4.webp") lightgray 50% / cover; 
+}
+
+.wt {
+    background: url("2. Cities/Chicago5.jpg") lightgray 50% / cover; 
+}
+
+/* 5. Las Vegas */
+
+.lvs {
+    background: url("2. Cities/LasVegas3.jpg") lightgray 50% / cover; 
+}
+
+.fse {
+    background: url("2. Cities/LasVegas4.jpg") lightgray 50% / cover; 
+}
+
+.vr {
+    background: url("2. Cities/LasVegas5.jpg") lightgray 50% / cover; 
+}
+
+/* 6. San Fracisco */
+
+.ggb {
+    background: url("2. Cities/SanFrancisco3.JPG") lightgray 50% / cover; 
+}
+
+.ai {
+    background: url("2. Cities/SanFrancisco4.jpg") lightgray 50% / cover; 
+}
+
+.fw {
+    background: url("2. Cities/SanFrancisco5.jpg") lightgray 50% / cover; 
+}
+
+/* animations */
+
+.red-card:hover {
+    left: 40px;
+    scale: 1.03;
+}
+
+.blue-card:hover {
+    left: 500px;
+    scale: 1.03;
+}
+
+.red-card:hover .img1 {
+    left: 40px;
+    scale: 1.03;
+}
+
+.blue-card:hover .img1 {
+    left: -40px;
+    scale: 1.03;
+}
+
+
+
+/* B.2.2.1.1 red-card-content / blue-card-content  */
+
+.red-card-content, .blue-card-content {
+    height: 85%;
+    width: 70%;
+    background-color: inherit;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.red-card-content .head, .blue-card-content .head {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--WhiteF);
+    background-color: inherit;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.red-card-content .content, .blue-card-content .content {
+    font-size: 15px;
+    font-weight: 300;
+    height: 128px;
+    width: 100%;
+    color: var(--WhiteE);
+    margin: 0;
+}
+
+.red-card-content button, .blue-card-content button {
+    height: 40px;
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 60px;
+    transition: 0.2s ease;
+}
+
+.red-card-content button:hover, .blue-card-content button:hover {
+    background-color: #bbb;
+}
+
+/* B.3 .section3 */
+
+.section3 {
+    width: 82%;
+    background-color: #ddd;
+    border-radius: 40px;
+    padding: 60px;
+    padding-bottom: 50px;
+    margin-left: 4%;
+}
+
+/* B.3.1 .other-attractions */
+
+.section3 .other-attractions {
+    background-color: inherit;
+}
+
+.other-attractions p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: inherit;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+/* B.3.1.1 .other-attractions-head */
+
+.other-attractions .other-attractions-head {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.other-attractions div img {
+    background-color: inherit;
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+.other-attractions div p {
+    color: var(--Black3);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* B.3.1.2 .cards-container2 */
+
+.cards-container2 {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 25px;
+}
+
+/* cards */
+
+.cards-container2 .card {
+    height: 420px;
+    width: 300px;
+    background-color: var(--WhiteF);
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.4);
+    display: block;
+    transition: 0.4s ease;
+}
+
+.cards-container2 .card:hover {
+    scale: 1.035;
+    background-color: var(--WhiteE);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cards-container2 .card .img2 {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.img2:hover {
+    scale: 1;
+}
+
+/* cards-container2 div img customization */
+
+/* 1. New York City */
+
+.cp {
+    background: url("2. Cities/NYC6.jpg") lightgray 50% / cover no-repeat;
+}
+
+.mm {
+    background: url("2. Cities/NYC7.webp") lightgray 50% / cover no-repeat;
+}
+
+.bw {
+    background: url("2. Cities/NYC8.jpg") lightgray 50% / cover no-repeat;
+}
+
+/* 2. Los Angeles */
+
+.go {
+    background: url("2. Cities/LA1.jpg") lightgray 50% / cover no-repeat;
+}
+
+.smp {
+    background: url("2. Cities/LA4.jpg") lightgray 50% / cover no-repeat;
+}
+
+.dl {
+    background: url("2. Cities/LA7.webp") lightgray 50% / cover no-repeat;
+}
+
+/* 3. Miami */
+
+.vm {
+    background: url("2. Cities/Miami6.jpg") lightgray 50% / cover no-repeat;
+}
+
+.ms {
+    background: url("2. Cities/Miami7.jpg") lightgray 50% / cover no-repeat;
+}
+.adhd {
+    background: url("2. Cities/Miami8.jpg") lightgray 50% / cover no-repeat;
+}
+
+/* 4. Chicago */
+
+.aioc {
+    background: url("2. Cities/Chicago6.jpg") lightgray 50% / cover no-repeat;
+}
+
+.mami {
+    background: url("2. Cities/Chicago7.jpg") lightgray 50% / cover no-repeat;
+}
+
+.mc {
+    background: url("2. Cities/Chicago8.png") lightgray 50% / cover no-repeat;
+}
+
+/* 5. Las Vegas */
+
+.rrc {
+    background: url("2. Cities/LasVegas6.jpg") lightgray 50% / cover no-repeat;
+}
+
+.hd {
+    background: url("2. Cities/LasVegas7.jpg") lightgray 50% / cover no-repeat;
+}
+
+.nm {
+    background: url("2. Cities/LasVegas8.jpg") lightgray 50% / cover no-repeat;
+}
+
+/* 6. San Francisco */
+
+.ggp {
+    background: url("2. Cities/SanFrancisco6.jpg") lightgray 50% / cover no-repeat;
+}
+
+.md {
+    background: url("2. Cities/SanFrancisco7.webp") lightgray 50% / cover no-repeat;
+}
+
+.ct {
+    background: url("2. Cities/SanFrancisco8.webp") lightgray 50% / cover no-repeat;
+}
+
+.cards-container2 div .p1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.cards-container2 div .p2 {
+    height: 85px;
+    width: 270px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.cards-container2 div button {
+    height: 30px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--WhiteF);
+    background-color: var(--AmericanRed);
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.4s ease;
+}
+
+.cards-container2 div button:hover {
+    background-color: var(--AmericanDarkRed);
+}
+
+/* B.4 seciont4 */
+
+.section4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* B.4.1 neighborhoods */
+
+.section4 .neighborhoods {
+    width: 80%;
+    padding: 60px;
+}
+
+.neighborhoods p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* B.4.1.1 neighborhoods-head */
+
+.neighborhoods-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.neighborhoods-head img {
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+.neighborhoods-head p {
+    color: var(--Black3);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* B.4.1.2 cards-container3 */
+
+.cards-container3 {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cards-container3 div {
+    height: 470px;
+    width: 115%;
+    border-radius: 40px;
+    margin-left: -1%;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+/* B.4.1.2.1 - B.4.1.2.3 plates */
+
+.plate1, .plate2, .plate3 {
+    box-shadow: 7px 7px 18px 0px rgba(0, 0, 0, 0.60);
+}
+
+.plate1:hover div, .plate3:hover div {
+    animation: slide-div-left 0.6s forwards;
+}
+
+.plate1:not(:hover) div, .plate3:not(:hover) div {
+    animation: back-to-the-place1 1s forwards;
+}
+
+.plate2:hover div {
+    animation: slide-div-right 0.6s forwards;
+}
+
+.plate2:not(:hover) div {
+    animation: back-to-the-place2 1s forwards;
+}
+
+/* animation */
+
+@keyframes slide-div-left {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        left: 690px;
+    }
+}
+@keyframes slide-div-right {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        left: 50px;
+    }
+}
+
+
+@keyframes back-to-the-place1 {
+    0% {
+        left: 690px;
+    }
+    100% {
+        opacity: 0;
+        left: 1050px;
+    }
+}
+@keyframes back-to-the-place2 {
+    0% {
+        left: 50px;
+    }
+    100% {
+        opacity: 0;
+        left: -320px;
+    }
+}
+
+.plate1 div, .plate2 div ,.plate3 div {
+    height: 280px;
+    width: 280px;
+    border-radius: 30px;
+    background: rgba(238, 238, 238, 0.55);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    top: 100px;
+    left: 1050px; /* was 690px */
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.plate2 div {
+    top: 100px;
+    left: -320px; /* was 50px */
+}
+
+.plate1 div:hover, .plate2 div:hover, .plate3 div:hover {
+    scale: 1.03;
+}
+
+.plate1 div:hover, .plate2 div:hover, .plate3 div:hover {
+    background: rgba(238, 238, 238, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.plate1 div p, .plate2 div p, .plate3 div p {
+    font-family: Inter;
+    background: rgba(238, 238, 238, 0);
+    margin-left: 10px;
+}
+
+.plate1 div .p1, .plate2 div .p1, .plate3 div .p1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.plate1 div .p2, .plate2 div .p2, .plate3 div .p2 {
+    height: 170px;
+    width: 270px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.plate1 div button, .plate2 div button, .plate3 div button {
+    height: 30px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--WhiteF);
+    background-color: var(--AmericanRed);
+    border: none;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-left: 10px;
+    transition: 0.4s ease;
+}
+
+.plate2 div button {
+    background-color: var(--AmericanBlue);
+}
+
+.plate1 div button:hover, .plate3 div button:hover {
+    background-color: var(--AmericanDarkRed);
+}
+
+.plate2 div button:hover {
+    background-color: var(--AmericanDarkBlue);
+}
+
+
+/* plate's background-image customization */
+
+/* 1. New York City */
+
+.manhattan {
+    background-image: url("2. Cities/NYC9.jpg");
+    background-size: cover;
+}
+
+.queens {
+    background-image: url("2. Cities/NYC11.jpg");
+    background-size: cover;
+}
+
+.brooklyn {
+    background-image: url("2. Cities/NYC10.jpg");
+    background-size: cover;
+}
+
+/* 2. Los Angeles */
+
+.hollywood {
+    background-image: url("2. Cities/LA8.png");
+    background-size: cover;
+}
+
+.venice-beach {
+    background-image: url("2. Cities/LA10.webp");
+    background-size: cover;
+}
+
+.beverly-hills {
+    background-image: url("2. Cities/LA9.jpg");
+    background-size: cover;
+}
+
+/* 3. Miami */
+
+.south-beach {
+    background-image: url("2. Cities/Miami9.jpg");
+    background-size: cover;
+}
+
+.coconut-groove {
+    background-image: url("2. Cities/Miami10.webp");
+    background-size: cover;
+}
+
+.downtown {
+    background-image: url("2. Cities/Miami11.jpg");
+    background-size: cover;
+}
+
+/* 4. Chicago */
+
+.loop {
+    background-image: url("2. Cities/Chicago9.jpg");
+    background-size: cover;
+}
+
+.wicker-park {
+    background-image: url("2. Cities/Chicago10.jpg");
+    background-size: cover;
+}
+
+.lincoln-park {
+    background-image: url("2. Cities/Chicago11.jpg");
+    background-size: cover;
+}
+
+/* 5. Las Vegas */
+
+.downtown-las-vegas {
+    background-image: url("2. Cities/LasVegas9.jpg");
+    background-size: cover;
+}
+
+.the-las-vegas-strip {
+    background-image: url("2. Cities/LasVegas10.jpg");
+    background-size: cover;
+}
+
+.summerlin {
+    background-image: url("2. Cities/LasVegas11.jpg");
+    background-size: cover;
+}
+
+/* 6. San Francisco */
+
+.union-square {
+    background-image: url("2. Cities/SanFrancisco9.JPG");
+    background-size: cover;
+}
+
+.mission-district {
+    background-image: url("2. Cities/SanFrancisco10.jpg");
+    background-size: cover;
+}
+
+.north-beach {
+    background-image: url("2. Cities/SanFrancisco11.webp");
+    background-size: cover;
+}
+
+/* B.5 section5 */
+
+/* B.5.1 div-container */
+
+.div-container {
+    display: flex;
+}
+
+/* B.5.1.1 left */
+
+.left {
+    width: 50%;
+    padding-left: 60px;
+}
+
+.left p {
+    width: fit-content;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.left div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.left div img {
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+.left div p {
+    color: var(--Black3);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* B.5.1.2 right */
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* B.5.1.2.1 book-trip */
+
+.book-trip {
+    background-color: var(--WhiteE);
+    height: fit-content;
+    width: 330px;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    padding: 30px;
+    transition: 0.4s ease;
+}
+
+.book-trip:hover {
+    scale: 1.02;
+}
+
+.book-trip .book-trip-p {
+    width: fit-content;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Black3);
+    background-color: var(--WhiteE);
+}
+
+/* B.5.1.2.1.1 form-container */
+
+.form-container {
+    height: fit-content;
+    border-radius: 12px;
+    margin-top: 10%;
+    padding: 30px;
+}
+
+form {
+    width: fit-content;
+}
+
+form p {
+    color: #444;
+    background-color: var(--Glass);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+form .city {
+    width: 250px;
+    height: 35px;
+    border: none;
+    background-color: var(--WhiteE);
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.city {
+    color: var(--Black3);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    appearance: none;
+    padding-left: 20px;
+}
+
+.city option {
+    width: 250px;
+    height: 35px;
+    border: none;
+    background-color: var(--WhiteE);
+    border-radius: 10px;
+    outline: none;
+}
+
+.city:focus, .city:hover, .city.option:hover, .city.option:focus {
+    outline: none;
+}
+
+.check-in-container {
+    width: fit-content;
+    margin-top: 30px;
+    position: relative;
+}
+
+.check-in-container input{
+    font-family: Inter;
+    height: 35px;
+    width: 210px;
+    background-color: var(--WhiteE);
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+.check-in-container input:focus, .check-in-container input:hover{
+    border: none;
+    outline: none;
+}
+
+.weeks-container {
+    margin-top: 30px;
+}
+
+.weeks-container select{
+    width: 250px;
+    height: 35px;
+    border: none;
+    background-color: var(--WhiteE);
+    border-radius: 10px;
+    appearance: none;
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.weeks-container select:focus, .weeks-container select:hover {
+    outline: none;
+}
+
+.submit {
+    height: 30px;
+    width: 120px;
+    background-color: var(--AmericanRed);
+    color: var(--WhiteF);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 70px;
+    transition: 0.6s ease;
+}
+.submit:hover {
+    background-color: darkred;
+}
+
+/* button */
+
+#review {
+    height: 80px;
+    width: 390px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--WhiteF);
+    background-color: #FF92C8;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-top: 30px;
+    transition: 0.4s ease;
+}
+
+#review img {
+    height: 25px;
+    width: 25px;
+    background-color: inherit;
+    margin-right: 15px;
+}
+
+#review:hover {
+    background-color: #ff6bb5;
+    scale: 1.04;
+}
+
+#review:hover img {
+    animation: heart-beat 1s forwards infinite;
+}
+
+@keyframes heart-beat {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+/* B.6 section6 */
+
+.section6 {
+    height: fit-content;
+    background: linear-gradient(180deg, var(--AmericanRed) 0%, var(--AmericanBlue) 80%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 3%;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 80px;
+    margin-top: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.section6 div {
+    background-color: inherit;
+    width: 220px;
+}
+
+.section6 div p {
+    background-color: inherit;
+    color: var(--WhiteF);
+    width: fit-content;
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.section6 div a {
+    background-color: inherit;
+    color: var(--WhiteF);
+    width: fit-content;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* C. footer */
+
+footer {
+    height: 20px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+    position: relative;
+}
+
+#vus {
+    height: 40px;
+}
+
+/* C.1 div1 */
+
+.div1 {
+    display: flex;
+    align-items: center;
+}
+
+.div1 a {
+    width: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Black6);
+    display: block;
+    text-decoration: none;
+}
+
+/* C.2 div2 */
+
+.div2 {
+    display: flex;
+    align-items: center;
+    column-gap: 20%;
+}
+
+.div2 img {
+    height: 30px;
+    width: 30px;
+}
