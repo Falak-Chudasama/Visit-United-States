@@ -1,0 +1,834 @@
+:root {
+    --AmericanRed: #D20000;
+    --AmericanDarkRed: #a90000;
+    --AmericanDarkRed2: #850000;
+    --AmericanBlue: #000096;
+    --AmericanDarkBlue: #000074;
+    --Black3: #333;
+    --Black6: #666;
+    --WhiteF: #fff;
+    --WhiteE: #eee;
+    --Glass: rgba(255, 255, 255, 0);
+    --Translucent: rgba(255, 255, 255, 0.6);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("Other Files/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("Other Files/Roboto/Roboto-Medium.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: var(--WhiteF);
+    font-family: Inter;
+}
+
+/* A. Header */
+
+.head1 {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.head1 img {
+    height: 35px;
+    margin-left: 60px;
+}
+
+.head1 div {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-left: 320px;
+}
+
+.head1 div a, .head1 div p {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--Black3);
+}
+
+.head1 div p {
+    background: linear-gradient(180deg, #D20000 30%, #000096 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head2 {
+    height: 500px;
+    width: 98.56vw;
+    background-size: cover;
+    box-shadow: 0px -60px 80px 0px rgba(0, 0, 0, 1) inset;
+}
+
+/* header's background customization */
+
+.historical-landmarks{
+    background: url("Images/5. Historical Landmarks/Mount Rushmore (bg).jpg") lightgray 50% / cover no-repeat;
+}
+
+.coastal-destinations {
+    background: url("Images/7. Coastal Destinations/Key West (bg).webp") lightgray 50% / cover no-repeat;
+}
+
+.outdoor-adventures {
+    background: url("Images/8. Outdoor Adventures/Great Smoky Mountains National Park (bg).jpg") lightgray 50% / cover no-repeat;
+}
+
+.road-trips {
+    background: url("Images/10. Road Trips/Pacific Coast Highway (bg).webp") lightgray 50% / cover no-repeat;
+}
+
+.metro-cities {
+    background: url("Images/6. Metropolitan Cities/NYC bg.jpg") lightgray 50% / cover no-repeat;
+}
+
+.theme-parks {
+    background: url("Images/4. Theme Parks/Disneyland resort (bg).jpg") lightgray 50% / cover no-repeat;
+}
+
+.sports-events {
+    background: url("Images/9. Sports Events/Super Bowl (bg).jpg") lightgray 50% / cover no-repeat;
+}
+
+.festivals {
+    background: url("Images/11. Festivals and Events/South by Southwest (bg).jpg") lightgray 50% / cover no-repeat;
+}
+
+.food {
+    background: url("Images/3. Food/Southern Cuisine (bg).webp") lightgray 50% / cover no-repeat;
+}
+
+/* B. Main */
+
+main {
+    height: fit-content;
+    width: 98.5vw;
+}
+
+.section1 {
+    border-radius: 0 50px 0 0;
+    width: 100%;
+    top: -50px;
+    position: relative;
+}
+
+.section1 #heading {
+    height: 140px;
+    width: 55%;
+    border-radius: 0px 55px 55px 0;
+    font-size: 35px;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px 0px var(--Black6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -70px;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.section1 p {
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 25px;
+}
+
+.section2 p {
+    background-color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+}
+
+.section2 #section2-head {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+#section2-head img {
+    background-color: inherit;
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+#section2-head p {
+    background-color: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* red-banner */
+
+#red-banner {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 60px;
+    transition: 0.4s ease;
+}
+
+#red-card {
+    background-color: var(--AmericanRed);
+    height: 250px;
+    width: 430px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+    padding-top: 35px;
+    margin-left: -50px;
+    margin-top: 230px;
+    transition: 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+#red-card:hover {
+    scale: 1.04;
+}
+
+#red-card p {
+    color: var(--WhiteF);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#red-card #red-head {
+    color: var(--WhiteF);
+    background-color: inherit;
+    height: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.red-img {
+    height: 430px;
+    width: 600px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    margin-top: -50px;
+    transition: 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.red-img:hover {
+    scale: 1.03;
+}
+
+/* blue-banner */
+
+#blue-banner {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 60px;
+    transition: 0.4s ease;
+}
+
+#blue-card {
+    background-color: var(--AmericanBlue);
+    height: 250px;
+    width: 430px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+    padding-top: 35px;
+    margin-left: -50px;
+    margin-top: 230px;
+    margin-left: 20px;
+    transition: 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+#blue-card:hover {
+    scale: 1.03;
+}
+
+#blue-card p {
+    color: var(--WhiteF);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#blue-card #blue-head {
+    color: var(--WhiteF);
+    background-color: inherit;
+    height: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.blue-img {
+    height: 430px;
+    width: 600px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    margin-top: -50px;
+    transition: 0.4s ease;
+    margin-left: -50px;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s ease;
+}
+
+.blue-img:hover {
+    scale: 1.03;
+}
+
+/* banner image customization */
+
+.statue-of-liberty {
+    background: url("Images/5. Historical Landmarks/Statue of Liberty.webp") lightgray 50% / cover no-repeat;
+}
+.mount-rushmore {
+    background: url("Images/5. Historical Landmarks/Mount Rushmore.png") lightgray 50% / cover no-repeat;
+}
+
+
+.key-west {
+    background: url("Images/7. Coastal Destinations/Key West.jpg") lightgray 50% / cover no-repeat;
+}
+.big-sur {
+    background: url("Images/7. Coastal Destinations/Big Sur.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.grand-canyon {
+    background: url("Images/8. Outdoor Adventures/Grand Canyon.jpeg") lightgray 50% / cover no-repeat;
+}
+.great-smoky-mountains {
+    background: url("Images/8. Outdoor Adventures/GreatSmokyMountains.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.route-66 {
+    background: url("Images/10. Road Trips/Route 66.jpg") lightgray 50% / cover no-repeat;
+}
+.pacific-coast-highway {
+    background: url("Images/10. Road Trips/Pacific Coast Highway.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.nyc {
+    background: url("Images/6. Metropolitan Cities/NYC.jpg") lightgray 50% / cover no-repeat;
+}
+.la {
+    background: url("Images/6. Metropolitan Cities/Los Angeles.webp") lightgray 50% / cover no-repeat;
+}
+
+
+.disney {
+    background: url("Images/4. Theme Parks/Disney Resort.webp") lightgray 50% / cover no-repeat;
+}
+.universal {
+    background: url("Images/4. Theme Parks/Universal Studios Hollywood.webp") lightgray 50% / cover no-repeat;
+}
+
+
+.super-bowl {
+    background: url("Images/9. Sports Events/Super Bowl.webp") lightgray 50% / cover no-repeat;
+}
+.world-series {
+    background: url("Images/9. Sports Events/World Series.webp") lightgray 50% / cover no-repeat;
+}
+
+
+.sxsw {
+    background: url("Images/11. Festivals and Events/South by Southwest.jpg") lightgray 50% / cover no-repeat;
+}
+.edc {
+    background: url("Images/11. Festivals and Events/Electric Daisy Carnival.jpg") lightgray 50% / cover no-repeat;
+}
+
+.southern {
+    background: url("Images/3. Food/Southern Cuisine.webp") lightgray 50% / cover no-repeat;
+}
+.midwestern {
+    background: url("Images/3. Food/Midwestern Cuisine.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+/* section3 */
+
+.section3 {
+    height: fit-content;
+    width: fit-content;
+    /* background-color: #; */
+    background: linear-gradient(180deg, #1E90FF 0%, #000096 100%);
+    /* border-radius: 30px; */
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    /* margin-left: 65px; */
+}
+
+.section3 p {
+    background-color: inherit;
+    color: var(--WhiteF);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin: 30px;
+}
+
+.section3 #section3-head {
+    background-color: inherit;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#section3-head img {
+    background-color: inherit;
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+#section3-head p {
+    color: var(--WhiteF);
+    background-color: inherit;
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section3 #cards-container {
+    background-color: inherit;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+
+#cards-container .red-card, #cards-container .blue-card {
+    background-color: var(--WhiteF);
+    height: fit-content;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+    transition: 0.4s ease;
+    scale: 0.95;
+}
+
+#cards-container .red-card:hover, #cards-container .blue-card:hover {
+    scale: 0.97;
+}
+
+.red-card .img, .blue-card .img {
+    height: 270px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+/* background image customization */
+
+.golden-gate-bridge {
+    background: url("Images/5. Historical Landmarks/Golden Gate Bridge.jpg") lightgray 50% / cover no-repeat;
+}
+
+.lincoln-memorial {
+    background: url("Images/5. Historical Landmarks/Lincoln Memorial.jpeg") lightgray 50% / cover no-repeat;
+}
+
+.independence-hall {
+    background: url("Images/5. Historical Landmarks/Independence Hall.jpg") lightgray 50% / cover no-repeat;
+}
+
+.alamo {
+    background: url("Images/5. Historical Landmarks/Alamo.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.cape-cod {
+    background: url("Images/7. Coastal Destinations/Cape Cod.jpg") lightgray 50% / cover no-repeat;
+}
+
+.monterey-bay {
+    background: url("Images/7. Coastal Destinations/Monterey Bay.jpg") lightgray 50% / cover no-repeat;
+}
+
+.olympic-peninsula {
+    background: url("Images/7. Coastal Destinations/Olympic Peninsula.webp") lightgray 50% / cover no-repeat;
+}
+
+.maui {
+    background: url("Images/7. Coastal Destinations/Maui.webp") lightgray 50% / cover no-repeat;
+}
+
+
+.glacier-np {
+    background: url("Images/8. Outdoor Adventures/Glacier National Park.jpg") lightgray 50% / cover no-repeat;
+}
+
+.yosemite-np {
+    background: url("Images/8. Outdoor Adventures/YosemiteNP.webp") lightgray 50% / cover no-repeat;
+}
+
+.zion-np {
+    background: url("Images/8. Outdoor Adventures/Zion National Park.jpg") lightgray 50% / cover no-repeat;
+}
+
+.yellowstone-np {
+    background: url("Images/8. Outdoor Adventures/Yellowstone National Park.webp") lightgray 50% / cover no-repeat;
+}
+
+
+.blue-ridge-highway {
+    background: url("Images/10. Road Trips/Blue Ridge Parkway.jpg") lightgray 50% / cover no-repeat;
+}
+
+.great-river-road {
+    background: url("Images/10. Road Trips/Great River Road.jpg") lightgray 50% / cover no-repeat;
+}
+
+.blue-ridge-highway {
+    background: url("Images/10. Road Trips/Blue Ridge Parkway.jpg") lightgray 50% / cover no-repeat;
+}
+
+.great-river-road {
+    background: url("Images/10. Road Trips/Great River Road.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.chicago {
+    background: url("Images/6. Metropolitan Cities/Chicago.jpeg") lightgray 50% / cover no-repeat;
+}
+
+.miami {
+    background: url("Images/6. Metropolitan Cities/Miami.jpg") lightgray 50% / cover no-repeat;
+}
+
+.san-francisco {
+    background: url("Images/6. Metropolitan Cities/San Francisco.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.cedar {
+    background: url("Images/4. Theme Parks/Cedar Point.jpg") lightgray 50% / cover no-repeat;
+}
+
+.six-flags {
+    background: url("Images/4. Theme Parks/Six Flags Magin Mountain.jpeg") lightgray 50% / cover no-repeat;
+}
+
+.dollywood {
+    background: url("Images/4. Theme Parks/Dollywood.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.nba {
+    background: url("Images/9. Sports Events/NBA.jpg") lightgray 50% / cover no-repeat;
+}
+
+.ufc {
+    background: url("Images/9. Sports Events/UFC.png") lightgray 50% / cover no-repeat;
+}
+
+.kentucky-derby {
+    background: url("Images/9. Sports Events/KentuckyDerby.jpeg") lightgray 50% / cover no-repeat;
+}
+
+
+.cvf {
+    background: url("Images/11. Festivals and Events/Coachella Valley Music Festival.webp") lightgray 50% / cover no-repeat;
+}
+
+.nojf {
+    background: url("Images/11. Festivals and Events/New Orleans Jazz Festival.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+.newengland {
+    background: url("Images/3. Food/New England Cuisine.webp") #d3d3d3 50% / cover no-repeat;
+}
+
+.southwestern {
+    background: url("Images/3. Food/Southwestern Cuisine.jpg") lightgray 50% / cover no-repeat;
+}
+
+.northeastern {
+    background: url("Images/3. Food/Northeastern Cuisine.jpg") lightgray 50% / cover no-repeat;
+}
+
+
+/* red-card and blue-card */
+
+.red-card p, .blue-card p {
+    color: var(--Black3);
+    height: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.red-card-head, .blue-card-head {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.red-card-strip, .blue-card-strip {
+    height: 25px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: var(--AmericanRed);
+    margin-left: 3px;
+    transition: 0.3s ease;
+}
+
+.blue-card-strip {
+    background-color: var(--AmericanBlue);
+}
+
+.red-card:hover .red-card-strip, .blue-card:hover .blue-card-strip {
+    height: 32px;
+}
+
+.red-card-head p, .blue-card-head p {
+    height: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--AmericanRed);
+    margin-left: 22px;
+}
+
+.blue-card-head p {
+    color: var(--AmericanBlue);
+}
+
+.red-button-location-container, .blue-button-location-container {
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 7%;
+}
+
+.red-button-location-container p, .blue-button-location-container p {
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.red-button-location-container button, .blue-button-location-container button {
+    height: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--WhiteF);
+    background-color: var(--AmericanRed);
+    transition: 0.4s ease;
+    margin-top: 10px;
+}
+.blue-button-location-container button {
+    background-color: var(--AmericanBlue);
+}
+
+.red-button-location-container button:hover {
+    background-color: var(--AmericanDarkRed);
+}
+
+.blue-button-location-container button:hover {
+    background-color: var(--AmericanDarkBlue);
+}
+
+.red-location, .blue-location {
+    display: flex;
+    align-items: center;
+}
+
+.red-location img, .blue-location img {
+    height: 20px;
+    margin-right: 8px;
+}
+
+.section4 {
+    padding: 60px;
+}
+
+.section4 p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* section5 */
+
+.section5 {
+    height: fit-content;
+    background: linear-gradient(180deg, var(--AmericanRed) 0%, var(--AmericanBlue) 80%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 3%;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.section5 div {
+    background-color: inherit;
+    width: 220px;
+}
+
+.section5 div p {
+    background-color: inherit;
+    color: var(--WhiteF);
+    width: fit-content;
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.section5 div a {
+    background-color: inherit;
+    color: var(--WhiteF);
+    width: fit-content;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#review {
+    height: 60px;
+    width: 350px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--WhiteF);
+    background-color: #FF92C8;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin-top: 30px;
+    margin-left: 650px;
+    transition: 0.4s ease;
+}
+
+#review img {
+    height: 26px;
+    width: 25px;
+    background-color: inherit;
+    margin-right: 20px;
+}
+
+#review:hover {
+    background-color: #ff6bb5;
+    scale: 1.04;
+}
+
+#review:hover img {
+    animation: heart-beat 1s forwards infinite;
+}
+
+@keyframes heart-beat {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+/* C. footer */
+
+footer {
+    height: 20px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+    position: relative;
+}
+
+#vus {
+    height: 40px;
+}
+
+/* C.1 div1 */
+
+.div1 {
+    display: flex;
+    align-items: center;
+}
+
+.div1 a {
+    width: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Black6);
+    display: block;
+    text-decoration: none;
+}
+
+/* C.2 div2 */
+
+.div2 {
+    display: flex;
+    align-items: center;
+    column-gap: 20%;
+}
+
+.div2 img {
+    height: 30px;
+    width: 30px;
+}

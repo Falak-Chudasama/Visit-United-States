@@ -1,0 +1,456 @@
+:root {
+    --AmericanRed: #D20000;
+    --AmericanDarkRed: #a90000;
+    --AmericanDarkRed2: #850000;
+    --AmericanBlue: #000096;
+    --AmericanDarkBlue: #000074;
+    --Black3: #333;
+    --Black6: #666;
+    --WhiteF: #fff;
+    --WhiteE: #eee;
+    --Glass: rgba(255, 255, 255, 0);
+    --Translucent: rgba(255, 255, 255, 0.6);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("Other Files/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("Other Files/Roboto/Roboto-Medium.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+
+/* A Header */
+
+header {
+    height: fit-content;
+    width: 100vh;
+}
+
+/*  */
+
+.nav-bar-container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-bar-container img {
+    height: 35px;
+    margin-left: 60px;
+}
+
+/*  */
+
+.nav-bar {
+    width: fit-content;
+    background-color: var(--Glass);
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-left: 320px;
+}
+
+.nav-bar a,
+.nav-bar p {
+    width: max-content;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: normal;
+    color: var(--Black3);
+    transition: color 0.6s ease;
+}
+
+.nav-bar p {
+    background: linear-gradient(180deg, #D20000 30%, #000096 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-bar a:hover {
+    color: var(--Black6);
+}
+
+/*  */
+
+#bg-container {
+    background: url("Images/14. Transportation/TransportationBG.jpg") lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.25) inset, 0px -50px 50px 0px rgba(0, 0, 0, 0.50) inset;
+    height: 500px;
+    width: 98.5vw;
+    margin-bottom: -40px;
+    position: relative;
+    transition: 1s ease;
+}
+
+/* B. Main */
+
+/* B.1 welcome */
+
+.welcome {
+    display: flex;
+    align-items: center;
+    border-radius: 40px 40px 0 0;
+    padding-top: 70px;
+    position: relative;
+}
+
+/* B.1.1 welcome-left */
+
+.welcome .welcome-left {
+    background: url("Images/1. Logos and BGs/TextBG.png") lightgray 50% / cover no-repeat;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#p-container {
+    background-color: var(--Glass);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#p-container p {
+    background-color: var(--Glass);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+#p-red {
+    color: var(--AmericanRed);
+    margin-right: 15px;
+}
+#p-blue {
+    color: var(--AmericanBlue);
+}
+
+/* B.1.2 welcome-right */
+
+.welcome .welcome-right {
+    background-color: inherit;
+    display: flex;
+    width: 50%;
+    border-radius: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.welcome-right p {
+    background-color: inherit;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #D20000 0%, #000096 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* B.4 seciont4 */
+
+.section4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* B.4.1 neighborhoods */
+
+.section4 .neighborhoods {
+    /* width: 80%; */
+    padding: 60px;
+}
+
+.neighborhoods p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* B.4.1.1 neighborhoods-head */
+
+.neighborhoods-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.neighborhoods-head img {
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+.neighborhoods-head p {
+    color: var(--Black3);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* B.4.1.2 cards-container3 */
+
+.cards-container3 {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cards-container3 div {
+    height: 470px;
+    width: 102%;
+    border-radius: 40px;
+    margin-left: -1%;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+/* B.4.1.2.1 - B.4.1.2.3 plates */
+
+.plate1, .plate2, .plate3 {
+    box-shadow: 7px 7px 18px 0px rgba(0, 0, 0, 0.60);
+}
+
+.plate1:hover div, .plate3:hover div {
+    animation: slide-div-left 0.6s forwards;
+}
+
+.plate1:not(:hover) div, .plate3:not(:hover) div {
+    animation: back-to-the-place1 1s forwards;
+}
+
+.plate2:hover div {
+    animation: slide-div-right 0.6s forwards;
+}
+
+.plate2:not(:hover) div {
+    animation: back-to-the-place2 1s forwards;
+}
+
+/* animation */
+
+@keyframes slide-div-left {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        left: 640px;
+    }
+}
+@keyframes slide-div-right {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        left: 50px;
+    }
+}
+
+
+@keyframes back-to-the-place1 {
+    0% {
+        left: 690px;
+    }
+    100% {
+        opacity: 0;
+        left: 1100px;
+    }
+}
+@keyframes back-to-the-place2 {
+    0% {
+        left: 50px;
+    }
+    100% {
+        opacity: 0;
+        left: -320px;
+    }
+}
+
+.plate1 div, .plate2 div ,.plate3 div {
+    height: 250px;
+    width: 320px;
+    border-radius: 30px;
+    background: rgba(238, 238, 238, 0.55);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    top: 150px;
+    left: 1050px;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.plate2 div {
+    top: 150px;
+    left: -320px;
+}
+
+.plate1 div:hover, .plate2 div:hover, .plate3 div:hover {
+    scale: 1.03;
+}
+
+.plate1 div:hover, .plate2 div:hover, .plate3 div:hover {
+    background: rgba(238, 238, 238, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.plate1 div p, .plate2 div p, .plate3 div p {
+    font-family: Inter;
+    background: rgba(238, 238, 238, 0);
+    margin-left: 10px;
+}
+
+.plate1 div .head, .plate2 div .head, .plate3 div .head {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.plate1 div .description, .plate2 div .description, .plate3 div .description {
+    height: 170px;
+    width: 270px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+
+/* plate's background-image customization */
+
+.airway {
+    background-image: url("Images/14. Transportation/TransportationBG1.jpg");
+    background-size: cover;
+}
+.railway {
+    background-image: url("Images/14. Transportation/TransportationBG2.jpg");
+    background-size: cover;
+}
+.metro {
+    background-image: url("Images/14. Transportation/TransportationBG3.webp");
+    background-size: cover;
+}
+
+/* B.5 section5 */
+.section5 p {
+    font-family: Inter;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -80px;
+}
+
+/* B.6 section6 */
+
+.section6 {
+    height: fit-content;
+    background: linear-gradient(180deg, var(--AmericanRed) 0%, var(--AmericanBlue) 80%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 3%;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 80px;
+    margin-top: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.section6 div {
+    background-color: inherit;
+    width: 220px;
+}
+
+.section6 div p {
+    background-color: inherit;
+    color: var(--WhiteF);
+    width: fit-content;
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.section6 div a {
+    background-color: inherit;
+    color: var(--WhiteF);
+    width: fit-content;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* C. footer */
+
+footer {
+    height: 20px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+    position: relative;
+}
+
+#vus {
+    height: 40px;
+}
+
+/* C.1 div1 */
+
+.div1 {
+    display: flex;
+    align-items: center;
+}
+
+.div1 a {
+    width: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Black6);
+    display: block;
+    text-decoration: none;
+}
+
+/* C.2 div2 */
+
+.div2 {
+    display: flex;
+    align-items: center;
+    column-gap: 20%;
+}
+
+.div2 img {
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D-ExploreStyle.css">
+    <link rel="icon" type="ico" href="Images/0. Logos/USA Logo.ico">
+    <title>Explore</title>
+</head>
+
+<body>
+    <!-- A. header -->
+    <header>
+
+        <!-- A.1 nav-bar -->
+        <div class="nav-bar-container">
+            <img src="Images/0. Logos/Visit United States.png" alt="">
+            <div class="nav-bar">
+                <p>Home</p>
+                <a href="">Destinations</a>
+                <a href="">Explore</a>
+                <a href="">Trips</a>
+                <a href="Extensions/3. TripPlanning/VisaInfo.html">Tourist Info</a>
+            </div>
+        </div>
+
+        <!-- A.2 bg-container -->
+        <div id="bg-container">
+        </div>
+    </header>
+
+    <!-- B. main -->
+    <main>
+
+        <!-- B.1 welcome -->
+        <div class="welcome"> 
+
+            <!-- B.1.1 welcome-left -->
+            <div class="welcome-left">
+                <div id="p-container">
+                    <p id="p-black">Discover</p>
+                    <p id="p-red">Destination</p>
+                    <p id="p-blue">Insights</p>
+                </div>
+            </div>
+
+            <!-- B.1.2 welcome-right -->
+            <div class="welcome-right">
+                <p>
+                    Discover the captivating allure of U.S. tourism with our 'Explore' section, your gateway to America's top travel destinations and hidden gems. Immerse yourself in the dynamic rhythm of bustling metropolises like New York and Los Angeles, where culture and innovation intersect. Venture into the breathtaking landscapes of national parks such as Yellowstone and the Grand Canyon, offering a haven for nature enthusiasts. Experience the unique charm of historic towns and vibrant festivals, each showcasing the rich tapestry of American heritage and creativity.
+                </p>
+            </div>
+        </div>
+
+        <!-- B.2 section2 -->
+        <div class="section2">
+            <!-- B.2.1 city-container -->
+            <div class="city-container">
+
+                <!-- B.2.2 cities-visit -->
+                <div class="cities-visit">
+                    <img src="Images/0. Logos/RedCircle.png" alt="">
+                    <p>Explore the America</p>
+                </div>
+                <p class="para">
+                    The Western U.S. entices with the stunning contrasts of California's golden beaches and the majestic Rockies. Head to the Midwest to marvel at the vastness of the Great Lakes and the energetic vibe of Chicago. The South beckons with the soulful rhythms of historic New Orleans and the warm embrace of Southern hospitality. In the Northeast, be awed by the iconic skyline of New York City and the rich historical tapestry of Boston. Journey to Hawaii to bask in lush tropical paradises.
+                </p>
+
+                <div class="button-container">
+                    <button class="most-visited-button" onclick="mostVisited()">Most Visited</button>
+                    <button class="cities-button" onclick="cities()">Cities</button>
+                    <button class="attractions-button" onclick="attractions()">Attractions</button>
+                </div>
+
+                <!-- B.2.3 cities -->
+                <div class="cities">
+
+                    <!-- B.2.3.1 nyc -->
+                    <div class="card nyc">
+                        <div class="img nyc-image"></div>
+                        <div class="banner">
+                            <div class="blue-head">
+                                <div class="blue-strip"></div>
+                                <p class="blue-p1 title">New York City</p>
+                            </div>
+                            <p class="p2 NYCPara description">
+                                Where dreams soar higher than skyscrapers, and every street corner holds a story waiting to
+                                be discovered, inviting you to explore its vibrant tapestry of culture and history.
+                            </p>
+                            <button class="blue-button button" onclick="nycPage()">Know more</button>
+                        </div>
+                    </div>
+
+                    <!-- B.2.3.2 la -->
+                    <div class="card la">
+                        <div class="img la-image"></div>
+                        <div class="banner">
+                            <div class="red-head">
+                                <div class="red-strip"></div>
+                                <p class="red-p1 title">Los Angeles</p>
+                            </div>
+                            <p class="p2 LAPara description">
+                                Where Hollywood dreams touch the sky, and the streets hum with tales of fame and fortune,
+                                beckoning you to uncover its glitzy allure.
+                            </p>
+                            <button class="red-button button" onclick="laPage()">Know more</button>
+                        </div>
+                    </div>
+
+                    <!-- B.2.3.3 miami -->
+                    <div class="card miami">
+                        <div class="img miami-image"></div>
+                        <div class="banner">
+                            <div class="blue-head">
+                                <div class="blue-strip"></div>
+                                <p class="blue-p1 title">Miami</p>
+                            </div>
+                            <p class="p2 MiamiPara description">
+                                A tropical paradise where the sun-kissed beaches and pulsating nightlife create a canvas of
+                                endless possibilities, inviting you to indulge in its vibrant fusion of culture and
+                                excitement.
+                            </p>
+                            <button class="blue-button button" onclick="miamiPage()">Know more</button>
+                        </div>
+                    </div>
+
+                    <!-- B.2.3.4 chicago -->
+                    <div class="card chicago">
+                        <div class="img chicago-image"></div>
+                        <div class="banner">
+                            <div class="red-head">
+                                <div class="red-strip"></div>
+                                <p class="red-p1 title">Chicago</p>
+                            </div>
+                            <p class="p2 ChicagoPara description">
+                                A city where architectural wonders stand tall against the winds off Lake Michigan, while the
+                                soulful rhythms of blues and jazz echo through its bustling streets, welcoming you to
+                                immerse yourself in its rich heritage and modern charm.
+                            </p>
+                            <button class="red-button button" onclick="chicagoPage()">Know more</button>
+                        </div>
+                    </div>
+
+                    <!-- B.2.3.5 lv -->
+                    <div class="card lv">
+                        <div class="img lv-image"></div>
+                        <div class="banner">
+                            <div class="blue-head">
+                                <div class="blue-strip"></div>
+                                <p class="blue-p1 title">Las Vegas</p>
+                            </div>
+                            <p class="p2 LVPara description">
+                                An electrifying oasis in the desert, where the neon lights of the Strip illuminate the night
+                                sky, and the promise of endless entertainment lures you into its dazzling embrace, promising
+                                an unforgettable adventure at every turn.
+                            </p>
+                            <button class="blue-button button" onclick="lasVegasPage()">Know more</button>
+                        </div>
+                    </div>
+
+                    <!-- B.2.3.6 sf -->
+                    <div class="card sf">
+                        <div class="img sf-image"></div>
+                        <div class="banner">
+                            <div class="red-head">
+                                <div class="red-strip"></div>
+                                <p class="red-p1 title">San Francisco</p>
+                            </div>
+                            <p class="p2 description">
+                                A city of contrasts, where the iconic Golden Gate Bridge spans the bay, and the eclectic
+                                neighborhoods buzz with creativity and innovation, inviting you to explore its diverse
+                                culture and storied past.
+                            </p>
+                            <button class="red-button button" onclick="sanFraciscoPage()">Know more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section5">
+            <p class="para">
+                Journey through the USA's rich tapestry of landmarks, where history, culture, and natural beauty converge in breathtaking fashion. From the towering majesty of the Statue of Liberty, symbolizing freedom and hope, to the awe-inspiring vastness of the Grand Canyon, each landmark tells a compelling story of America's heritage and natural splendor. Explore the architectural marvels of Washington, D.C.'s monuments and museums, the enduring spirit of Mount Rushmore's carved presidents, and the technological triumphs of the Golden Gate Bridge. Delve into the mysteries of ancient Native American sites or revel in the neon vibrancy of Las Vegas.
+            </p>
+        </div>
+
+        <div class="section6">
+            <div class="destinations">
+                <p>Destinations</p>
+                <a href="">Disneyland Resort, California</a>
+                <a href="">Statue of Liberty, New York</a>
+                <a href="">Mount Rushmore, South Dakota</a>
+                <a href="">The Alamo, Texas</a>
+                <a href="">Chicago, Illinois</a>
+                <a href="">San Francisco, California</a>
+                <a href="">Miami Beach, Florida</a>
+                <a href="">Santa Monica, California</a>
+                <a href="">Grand Canyon, Arizona</a>
+                <a href="">Yosemite National Park, California</a>
+                <a href="">Super Bowl</a>
+                <a href="">NBA Finals</a>
+                <a href="">Coachella Music Festival, California</a>
+            </div>
+            <div class="popular">
+                <p>Popular Ones</p>
+                <a href="">Statue of Liberty, New York</a>
+                <a href="">Time Square, New York</a>
+                <a href="">Hollywood sign, California</a>
+                <a href="">Little Havana, Florida</a>
+                <a href="">Chicago Riverwalk, Illinois</a>
+                <a href="">Mount Rushmore, South Dakota</a>
+                <a href="">Golden Gate Bridge, California</a>
+                <a href="">Key West, Florida</a>
+                <a href="">The Venetian Resort, Nevada</a>
+                <a href="">Washington Monument, DC</a>
+            </div>
+            <div class="interests">
+                <p>Interests</p>
+                <a href="">Food</a>
+                <a href="">Theme Parks</a>
+                <a href="">Historical Landmarks</a>
+                <a href="">Metropolitan Cities</a>
+                <a href="">Coastal Destinations</a>
+                <a href="">Outdoor Adventures</a>
+                <a href="">Sports Events</a>
+                <a href="">Road Trips</a>
+                <a href="">Festivals & Events</a>
+            </div>
+            <div class="plan-trip">
+                <p>Plan a Trip</p>
+                <a href="">Transportation</a>
+                <a href="">Visa Information</a>
+                <a href="">Explore</a>
+                <a href="">Tips</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img id="vus" src="Images/0. Logos/Visit United States.png" alt="">
+        <div class="div1">
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+            <a href="">Advertising</a>
+        </div>
+        <div class="div2">
+            <img src="Images/0. Logos/Facebook logo 2.png" alt="">
+            <img src="Images/0. Logos/Youtube logo 2.png" alt="">
+            <img src="Images/0. Logos/Instagram logo 2.png" alt="">
+        </div>
+    </footer>
+    <script src="D-ExploreScript.js"></script>
+</body>
+
+</html>
